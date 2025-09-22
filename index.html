@@ -77,9 +77,17 @@
         padding: var(--spacing-sm);
      }
 
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 24px;
+     }
+
      .values {
         display: flex;
-        gap: var(--spacing-sm);
+        flex-direction: column;
      }
 
      .navbar {
@@ -89,22 +97,15 @@
      }
 
      .navbar-links {
-        display: flex;
-        list-style: none;
-        gap: var(--spacing-md)
-     }
-
-     .hero {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 24px;
+        display: none;
      }
 
      .showroom {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        gap: var(--spacing-md);
+        max-width: 100%;
+        overflow: auto;
      }
 
      .book-a-call-cta {
@@ -123,11 +124,36 @@
         flex-direction: column;
         gap: var(--spacing-sm);
      }
+     .hero__img {
+        max-width: 100%;
+     }
 
     footer {
         display: flex;
         padding: var(--spacing-md);
     }
+
+    @media (width > 410px){
+        .hamburger-button {
+            display: none;
+        }
+        .navbar-links {
+            display: flex;
+            list-style: none;
+            gap: var(--spacing-md)
+     }
+        .values {
+            display: flex;
+            flex-direction: row;
+            gap: var(--spacing-sm);
+     }
+        .hero {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 24px;
+     }
+     }
 
     </style>
   </head>
@@ -135,6 +161,12 @@
     <header class="navbar container">
         <img src="https://placehold.co/100x60" alt="Logo">
         <nav>
+            <div class="hamburger-button">
+                <button>
+                    🍔                   
+                </button>
+            </div>
+
             <ul class="navbar-links">
                 <li>Home</li>
                 <li>Blog</li>
@@ -154,7 +186,7 @@
                     <button class="btn btn-secondary">Vedi portfolio</button>
                 </div>
             </div>
-            <img src="https://placehold.co/600x400" alt="">
+            <img class="hero__img" src="https://placehold.co/600x400" alt="">
         </section>
         <section>
             <div class="values container">
