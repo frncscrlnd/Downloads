@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" />
+    <style>
+      :root {
+        --body-font: "Roboto", sans-serif;
+        --font-size-base: 16px;
+        --font-size-lg: 24px;
+        --font-size-sm: 14px;
+        --font-size-display: 48px;
+
+        --container-max-width: 1200px;
+
+        --color-primary: #3498db;
+        --color-primary-light: #5dade2;
+        --color-secondary: #2ecc71;
+        --color-secondary-light: #58d68d;
+        --color-text: #2c3e50;
+
+        --spacing-sm: 8px;
+        --spacing-md: 16px;
+        --spacing-lg: 24px;
+
+        --button-padding: 10px 20px;
+
+        --border-radius-base: 13px;
+      } 
+
+      section {
+        padding: var(--spacing-sm);
+        margin-bottom: var(--spacing-md);
+      }
+
+      .container{
+        max-width: var(--container-max-width);
+        margin: 0 auto;
+      }
+      .text-base{
+        font-size: var(--font-size-base);
+     }
+      .text-lg{
+        font-size: var(--font-size-lg);
+     }
+     .text-sm{
+        font-size: var(--font-size-sm)
+     }
+     .text-display{
+        font-size: var(--font-size-display)
+     }
+     .btn{
+        border-radius: var(--border-radius-base);
+        cursor: pointer;
+        padding: var(--button-padding);
+        border: 0;
+     }
+     .btn-primary{
+        background: var(--color-primary);
+        
+     }
+     .btn-primary:hover{
+       background: var(--color-primary-light); 
+     }
+
+     .btn-secondary{
+        background: var(--color-secondary);
+     }
+     .btn-secondary:hover{
+       background: var(--color-secondary-light);
+     }
+
+     .card{
+        box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+        padding: var(--spacing-sm);
+     }
+
+     .values {
+        display: flex;
+        gap: var(--spacing-sm);
+     }
+
+     .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+
+     .navbar-links {
+        display: flex;
+        list-style: none;
+        gap: var(--spacing-md)
+     }
+
+     .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+     }
+
+     .showroom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+
+     .book-a-call-cta {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-lg);
+     }
+
+     .book-a-call-cta__text {
+        max-width: 600px;
+        text-align: justify;
+     }
+
+     .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+     }
+
+    footer {
+        display: flex;
+        padding: var(--spacing-md);
+    }
+
+    </style>
+  </head>
+  <body>
+    <header class="navbar container">
+        <img src="https://placehold.co/100x60" alt="Logo">
+        <nav>
+            <ul class="navbar-links">
+                <li>Home</li>
+                <li>Blog</li>
+                <li>Chi sono</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero container">
+            <div>
+                <div>
+                    <h1 class="text-display">Sono un Full Stack</h1>
+                    <p>Il migliore sulla piazza</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary">Prenota una call</button>
+                    <button class="btn btn-secondary">Vedi portfolio</button>
+                </div>
+            </div>
+            <img src="https://placehold.co/600x400" alt="">
+        </section>
+        <section>
+            <div class="values container">
+                <article class="card">
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, hic temporibus voluptatibus eveniet, deserunt ipsum quod aliquid distinctio beatae pariatur dolorem alias iste est tempora fugiat voluptatem quas commodi qui.</p>
+                </article>
+                <article class="card">
+                    <h2>Backend</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis illum dolorem rerum autem, ut voluptate non distinctio accusantium culpa qui fugiat eaque dolor ipsa, tempora omnis minus quos sit? A.</p>
+                </article>
+                <article class="card">
+                    <h2>Frontend</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, quam ad dolorem inventore tenetur illo nam voluptatum molestias ipsam earum doloribus iure nostrum maxime hic itaque est rem. At, voluptate!</p>
+                </article>
+            </div>
+        </section>
+        <section class="container">
+            <h2>Offriamo soluzioni</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ea aspernatur eum itaque rerum reprehenderit corporis dicta doloremque repellat unde dolorum laudantium accusamus vero libero quae a, architecto, quibusdam qui.</p>
+            <div class="showroom">
+                <img src="https://placehold.co/200x200" alt="ferrari">
+                <img src="https://placehold.co/200x200" alt="porsche">
+                <img src="https://placehold.co/200x200" alt="lambo">
+                <img src="https://placehold.co/200x200" alt="pagani">
+                <img src="https://placehold.co/200x200" alt="fiat panda di davide">
+            </div>
+        </section>
+        <section class="container book-a-call-cta">
+            <img src="https://placehold.co/400x400" alt="">
+            <div class="book-a-call-cta__text">
+                <h2>Adesso tocca a te</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta expedita animi quos quasi dolores? Architecto rerum veritatis quos corrupti minus earum blanditiis facere ducimus laborum beatae. Corrupti consequatur magni a.</p>
+                <button class="btn btn-primary">Prenota una call</button>
+            </div>
+        </section>
+        <section class="container">
+            <h2>Contattami</h2>
+            <form class="contact-form">
+                <input type="email" name="" id="" placeholder="Inserisci la tua email">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Ciao Davide ti contatto per l'annuncio Fiat Panda"></textarea>
+                <div>
+                    <button class="btn btn-secondary">Invia</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="container">
+        &copy; 2025 | All rights are reserved
+    </footer>
+  </body>
+</html>
