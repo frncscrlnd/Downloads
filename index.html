@@ -6,36 +6,62 @@
     <!-- bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Portfolio</title>
     <!-- normalize css cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" />
+    <!-- icon -->
+     <link rel="icon" href="assets/dev.ico">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        .nav-link.active{
+            text-decoration: underline;
+        }
+        body{
+            font-family: "Comic Neue", cursive;
+        }
+        .logo{
+            font-size: 40px;
+            margin: 10px;
+        }
+        .min-height-500 {
+            min-height: 500px;
+        }
+        .icon-small {
+            width: 300px;
+        }
+    </style>
 </head>
 <body>
-    <div class="bg-body-tertiary">
+    <div class="bg-body-tertiary border-bottom border-4 border-dark">
         <header class="navbar bg-body-tertiary container-xl">
-            <img src="https://placehold.co/100x60" alt="Logo">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <p class="logo fw-bold">
+                fo
+            </p>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fs-4">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse fw-bold" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="#">Blog</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    Davide
+                                    Chi sono
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Panda</a></li>
+                                    <li><a class="dropdown-item" href="#">CV</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -45,7 +71,7 @@
         </header>
     </div>
     <main>
-        <section class="container-xl">
+        <section class="container-xl my-5">
             <div class="row gap-3 gap-md-0">
                 <div class="col-12 col-md-6 col-lg-8 d-flex flex-column justify-content-center">
                     <div>
@@ -53,77 +79,103 @@
                         <p class="fs-3">Il migliore sulla piazza</p>
                     </div>
                     <div>
-                        <button class="btn btn-primary">Prenota una call</button>
-                        <button class="btn btn-outline-primary">Vedi portfolio</button>
+                        <button class="btn btn-dark">Prenota una call</button>
+                        <button class="btn btn-light">Vedi portfolio</button>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <picture >
-                        <source media="(min-width:768px)" srcset="https://placehold.co/600x400">
-                        <source media="(min-width:465px)" srcset="https://placehold.co/500x300">
-                        <img src="https://placehold.co/300x200" alt="Flowers" class="mw-100">
+                        <source media="(min-width:768px)" srcset="/assets/migliore.drawio.png">
+                        <source media="(min-width:465px)" srcset="/assets/migliore.drawio.png">
+                        <svg class="icon-small" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                        </svg>
                     </picture>
                 </div>
             </div>
         </section>
         <section>
-            <div class="values container">
-                <article class="card">
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, hic temporibus voluptatibus
-                        eveniet, deserunt ipsum quod aliquid distinctio beatae pariatur dolorem alias iste est tempora
-                        fugiat voluptatem quas commodi qui.</p>
-                </article>
-                <article class="card">
-                    <h2>Backend</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis illum dolorem rerum autem, ut
-                        voluptate non distinctio accusantium culpa qui fugiat eaque dolor ipsa, tempora omnis minus quos
-                        sit? A.</p>
-                </article>
-                <article class="card">
-                    <h2>Frontend</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, quam ad dolorem inventore tenetur
-                        illo nam voluptatum molestias ipsam earum doloribus iure nostrum maxime hic itaque est rem. At,
-                        voluptate!</p>
-                </article>
+            <div class="values container my-5">
+                <div class="row">
+                    <div class="col-12 col-md-4">   
+                        <article class="card min-height-500 p-3 border-4 border-dark">
+                            <h2 class="fw-bold">UI/UX Design</h2>
+                            <p>
+                                Faccio uno studio 
+                                del tuo prodotto 
+                                e scelgo il design che 
+                                ti rappresenta di più
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-4 mt-5 mt-md-0">
+                        <article class="card min-height-500 p-3 border-4 border-dark">
+                            <h2 class="fw-bold">Backend</h2>
+                            <p>
+                                Sviluppo le api,
+                                tecnicamente 
+                                INECCEPIBILI
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-4 mt-5 mt-md-0">
+                        <article class="card min-height-500 p-3 border-4 border-dark">
+                                <h2 class="fw-bold">Frontend</h2>
+                                <p>
+                                    Offro il meglio delle 
+                                    tecnologie web per 
+                                    un'esperienza 
+                                    emozionante
+                                </p>
+                        </article>
+                    </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="container">
-            <h2>Offriamo soluzioni</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ea aspernatur eum itaque rerum
-                reprehenderit corporis dicta doloremque repellat unde dolorum laudantium accusamus vero libero quae a,
-                architecto, quibusdam qui.</p>
-            <div class="showroom">
-                <img src="https://placehold.co/200x200" alt="ferrari">
-                <img src="https://placehold.co/200x200" alt="porsche">
-                <img src="https://placehold.co/200x200" alt="lambo">
-                <img src="https://placehold.co/200x200" alt="pagani">
-                <img src="https://placehold.co/200x200" alt="fiat panda di davide">
+        <section class="container my-5">
+            <h2 class="fw-bold">Offriamo emozioni</h2>
+            <p>I clienti che ci hanno scelto e si dicono soddisfatti</p>
+            <div class="">
+                <img src="assets/horse.png" width="200" alt="ferrari">
+                <img src="assets/lightning.png" width="200" alt="porsche">
+                <img src="assets/bull.png" width="200" alt="lambo">
+                <img src="assets/pagani.png" width="200" alt="pagani">
+                <img src="assets/panda.png" width="200" alt="panda">
+                <img src="assets/dacia.png" width="200" alt="dacia">
             </div>
         </section>
-        <section class="container book-a-call-cta">
-            <img src="https://placehold.co/400x400" alt="">
-            <div class="book-a-call-cta__text">
+        <section class="container book-a-call-cta my-5 d-flex align-items-center flex-column flex-md-row gap-4">
+            <img src="assets/finger.png" alt="" class="img-fluid" width="400px" />
+            
+            <div class="book-a-call-cta__text my-5 my-md-0">
                 <h2>Adesso tocca a te</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta expedita animi quos quasi dolores?
-                    Architecto rerum veritatis quos corrupti minus earum blanditiis facere ducimus laborum beatae.
-                    Corrupti consequatur magni a.</p>
-                <button class="btn btn-primary">Prenota una call</button>
+                <p>
+                    Sceglimi per il tuo prossimo progetto<br>
+                    dai un boost alle tue vendite
+                </p>
+                <button class="btn btn-dark">Prenota una call</button>
             </div>
         </section>
-        <section class="container">
+        <section class="container border border-4 border-dark rounded">
             <h2>Contattami</h2>
-            <form class="contact-form">
-                <input type="email" name="" id="" placeholder="Inserisci la tua email">
-                <textarea name="" id="" cols="30" rows="10"
-                    placeholder="Ciao Davide ti contatto per l'annuncio Fiat Panda"></textarea>
-                <div>
-                    <button class="btn btn-secondary">Invia</button>
+            <nav class="navbar bg-body-tertiary col-12">
+            <form class="container-fluid">
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Indirizzo e-mail" aria-label="Username" aria-describedby="basic-addon1"/>
+                </div>
+                <div class="form-floating" style="width: 100%;">
+                    <textarea class="form-control" style="min-height: 300px;" placeholder="Sono interessato a..." id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Scrivi qui</label>
                 </div>
             </form>
+            </nav>
         </section>
     </main>
-    <footer class="container">
+    <footer class="container my-3">
         &copy; 2025 | All rights are reserved
     </footer>
 
